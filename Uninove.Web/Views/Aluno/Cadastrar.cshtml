@@ -1,0 +1,30 @@
+ @model Uninove.Web.Models.Aluno
+
+<h1>Cadastro de Aluno</h1>
+
+<form asp-action="Cadastrar" method="post">
+
+    <p>Nome</p>
+    <input asp-for="Nome" />
+    <span asp-validation-for="Nome"></span>
+
+    <p>Email</p>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+
+    <p>RA</p>
+    <input asp-for="RA" />
+    <span asp-validation-for="RA"></span>
+
+    <p>Curso</p>
+    <input asp-for="Curso" />
+    <span asp-validation-for="Curso"></span>
+
+    <p>Data de Nascimento</p>
+    <input asp-for="DataNascimento" type="date" />
+    <span asp-validation-for="DataNascimento"></span>
+
+    <br /><br />
+    <button type="submit">Cadastrar</button>
+
+</form>
